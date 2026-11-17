@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    <header>
+        <h1> Agendamento de manutenção </h1>
+    </header>
+    <div>
+        <form action ="processa.php" method = "post">
+            <label for="nome"> Nome do responsável: </label>
+            <input type="text" required name ="nome" id="nome">
+            <br>
+            <label for="equipamento"> Nome do equipamento: </label>
+            <input type="text" required name ="equipamento" id="equipamento">
+            <br>
+            <label for="quantidade"> Quantidade de equipamentos: </label>
+            <input type="number" required name ="quantidade" id="quantidade">
+            <br>
+            <label> Tipo de serviço </label>
+            <br>
+            <input type="radio" required name ="tipo" id="preventiva" value="Preventiva">
+            <label for="preventiva">Preventiva</label>
+            <br>
+            <input type="radio" required name ="tipo" id="corretiva" value="Corretiva">
+            <label for="corretiva">Corretiva</label>
+            <br>
+            <input type="radio" required name="tipo" id="instalacao" value="Instalacao">
+            <label for="instalacao">Instalação</label>
+            <br><br>
+            <button type="submit">Calcular tempo estimado</button>
+        </form>
+    </div>
+</body>
+</html>

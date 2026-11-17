@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 9</title>
+</head>
+<body>
+    <header>
+        <h1> Desempenho da corrida </h1>
+    </header>
+    <div>
+        <form action ="processa.php" method = "post">
+            <label for="nome"> Nome do atleta: </label>
+            <input type="text" required name ="nome" id="nome">
+            <br>
+            <label for="distancia"> Distância percorrida: </label>
+            <input type="float" required name ="distancia" id="distancia" placeholder = "Quantos KM correu?">
+            <br>
+            <label for="tempo"> Tempo utilizado: </label>
+            <input type="number" required name ="tempo" id="tempo">
+            <br><br>
+            <button type="submit">Enviar Informações</button>
+        </form>
+    </div>
+</body>
+</html>
